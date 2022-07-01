@@ -1,0 +1,10 @@
+.feedback {
+    &__content {
+        margin: 0 120px;
+        display: flex;
+
+        &-item {
+            display: flex;
+        }
+    }
+}

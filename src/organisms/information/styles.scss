@@ -1,0 +1,9 @@
+.information {
+    background: url(../../images/about_us.svg);
+
+    &__content {
+        display: flex;
+        justify-content: space-around;
+        margin: 100px;
+    }
+}

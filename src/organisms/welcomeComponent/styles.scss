@@ -1,0 +1,32 @@
+@import "../../styles.scss";
+
+.welcome {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 250px 0;
+    background: url("../../images/banner.svg");
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1, h2 {
+        color: $textColor;
+
+        &::after {
+            content: ' ';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: $pinkGradient;
+            transition: width 310ms ease-in-out;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}

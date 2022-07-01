@@ -1,0 +1,12 @@
+.description {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+
+    &__buttons-block {
+        display: flex;
+        justify-content:flex-start;
+    }
+}

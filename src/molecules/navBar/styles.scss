@@ -1,0 +1,50 @@
+@import "../../_styles.scss";
+
+.nav {
+    &__list {
+        display: flex;
+        margin-bottom: 0;
+        column-gap: 20px;
+    }
+
+    &__link {
+        list-style-type: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $navBarTextColor;
+}
+
+.nav__list-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: beige;
+    position: absolute;
+    top: 50px;
+    right: 65px;
+    background: linear-gradient(-45deg, $pinkGradient, $blueGradient, $greenGradient);
+    border-radius: 10px;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 930px) {
+    .mobile-menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: $textColor;
+    }
+}
