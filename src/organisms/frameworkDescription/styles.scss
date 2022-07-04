@@ -4,18 +4,11 @@
     background-color: $backgroundColor;
 
     &__item {
-        display: flex;
         background-color: $backgroundFWColor;
-        margin: 0 120px 50px 120px;
-        border-radius: 10px;
-
-        &-description {
-            display: flex;
-            justify-content: space-between;
-        }
+        margin-bottom: 50px;
 
         &:last-child {
-            margin: 0 120px 0 120px;
+            margin: 0;
         }
     }
 }

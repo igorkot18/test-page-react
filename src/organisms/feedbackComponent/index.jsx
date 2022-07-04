@@ -10,21 +10,23 @@ import "./styles.scss";
 
 const FeedbackComponent = () => {
     return (
-        <div className="feedback">
+        <section id="feedback" className="feedback">
             <TitleComponent title={TITLE} />
-            <div className="feedback__content">
-                {FEEDBACK_DATA.map(({logo, title, description, buttonsLabels, id}) => (
-                    <div className="feedback__content-item" key={id}>
-                        <ImageComponent source={logo}/>
-                        <DescriptionComponent 
-                            title={title}
-                            description={description}
-                            buttonsLabels={buttonsLabels}
-                        />
-                    </div>
-                ))}
-            </div>
-        </div>
+            <div className="container">
+                <div className="row">
+                    {FEEDBACK_DATA.map(({logo, title, description, buttonsLabels, id}) => (
+                        <div className="feedback__content col-xxl-6" key={id}>
+                            <ImageComponent source={logo}/>
+                            <DescriptionComponent 
+                                title={title}
+                                description={description}
+                                buttonsLabels={buttonsLabels}
+                            />
+                        </div>
+                    ))}
+                </div>
+            </div>  
+        </section>
     )
 }
 

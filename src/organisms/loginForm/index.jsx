@@ -1,31 +1,42 @@
 import React, { useState } from 'react';
 
-import Form from 'react-bootstrap/Form';
-
 import TitleComponent from '../../atoms/title';
-import ButtonComponent from '../../atoms/button';
-import InputComponent from '../../atoms/input';
 
-import { LOGIN_FORM_DATA } from './constants';
+import { FORM_DATA } from './constant';
 
 import "./styles.scss";
 
 
 const LoginForm = () => {
-  const [state, setState] = useState(true);
+  const [state, setState] = useState(true)
 
   return (
-    <div className="login-form">
-        <TitleComponent title={"Contuct Us"}/>
-        <InputComponent />
-        <div className="login-form__button">
-          <ButtonComponent label={LOGIN_FORM_DATA.button.label} disabled={state}/>
-          <Form.Group className="login-form__checkbox" controlId={LOGIN_FORM_DATA.checkbox.controlId}>
-            <Form.Check type={LOGIN_FORM_DATA.checkbox.type} label={LOGIN_FORM_DATA.checkbox.label} onClick={() => {setState(!state)}}/>
-          </Form.Group>
+    <section id='contactUs' className="login-form">
+      <TitleComponent title="Contact Us"/>
+      <div className='container login-form__content'>
+      <form class="row g-3">
+        {FORM_DATA.map(({forItem, label, labelClass, type, placeholder, inputClass, id, isRequired}) => (
+          <div class="col-xxl-3 col-sm-12">
+            <label for={forItem} class={labelClass}>{label}</label>
+            <input placeholder={placeholder} type={type} class={inputClass} id={id} required={isRequired} />
         </div>
-    </div>
-    
+        ))}
+
+        <div class="col-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="invalidCheck2" onClick={() => setState(!state)} />
+            <label class="form-check-label" for="invalidCheck2">
+              Check to Submit
+            </label>
+          </div>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-primary submit-button" type="submit" disabled={state}>Submit</button>
+        </div>
+      </form>
+
+      </div>
+    </section>
   )
 }
 

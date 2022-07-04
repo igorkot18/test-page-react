@@ -5,10 +5,10 @@ import ApplicationsItem from '../../molecules/appItem';
 
 const ApplicationsComponent = () => {
   return (
-    <>
+    <section id='applications'>
         <TitleComponent title={"Applications"}/>
         <ApplicationsItem />
-    </>
+    </section>
     
   )
 }

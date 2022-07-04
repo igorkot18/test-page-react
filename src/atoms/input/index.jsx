@@ -8,7 +8,7 @@ import './styles.scss';
 
 const InputComponent = () => {
   return (
-    <div className='input'>
+    <div className='contact-us-form row'>
         {INPUT_DATA.map(({
           id, 
           label, 
@@ -17,8 +17,8 @@ const InputComponent = () => {
           controlId, 
           required
         }) => (
-          <Form key={id}>
-              <Form.Group controlId={controlId}>
+          <Form key={id} className="col-3">
+              <Form.Group controlId={controlId} className="contact-us-form__item">
                   <Form.Label>{label}</Form.Label>
                   <Form.Control type={type} placeholder={placeholder} required={required}/>
                   <Form.Text className="text-muted">

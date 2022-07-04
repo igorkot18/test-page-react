@@ -1,21 +1,13 @@
 @import "../../_styles.scss";
 
 .application {
-    background-color: $backgroundColor;
-    padding-left: 120px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
     &__item {
-        margin-bottom: 50px;
-
         &-label {
             max-width: 227px;
             background-color: $backgroundAppLabelColor;
             color: $textColor;
             display: flex;
             justify-content: center;
-            padding: 5px 0;
         }
     }
 }

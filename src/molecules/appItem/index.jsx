@@ -6,13 +6,17 @@ import "./styles.scss";
 
 const ApplicationsItem = () => {
   return (
-    <div className='application'>
+    <div className='application container'>
+      <div className='row g-4'>
         {APPLICATIONS_ITEM_DATA.map(({id, image, label}) => (
-            <div className='application__item' key={id}>
-                <img src={image} alt='logo'></img>
-                <div className='application__item-label'>{label}</div> 
+            <div className='col-xxl-3 p-0 col-sm-6' key={id}>
+              <div className='application__item'>
+                  <img src={image} alt='logo'></img>
+                  <div className='application__item-label'>{label}</div> 
+              </div>
             </div>
         ))}
+      </div> 
     </div>
   )
 }

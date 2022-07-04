@@ -8,9 +8,7 @@ import "./styles.scss"
 const Header = () => {
   return (
     <header className='header'>
-      <div className='header__logo'>
-        <Logo />
-      </div>
+      <Logo />
       <div className='header__nav-bar'>
         <NavBar />
       </div>

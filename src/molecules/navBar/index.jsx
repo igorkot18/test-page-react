@@ -17,9 +17,9 @@ const NavBar = () => {
                 <ul className={state ? "nav__list-mobile" : "nav__list"}>
                     {NAV_BAR_DATA.map(({url, text, id}) => (
                         <li key={id} className="nav__link">
-                            <Link to={url}>
+                            <a href={url}>
                                 {text}
-                            </Link>
+                            </a>
                         </li>
                     ))}  
                 </ul>

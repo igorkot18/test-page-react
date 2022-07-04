@@ -15,7 +15,7 @@ const DescriptionComponent = (props) => {
         <div className='description'>
             <div>
                 <h3>{title}</h3>
-                <p>{description}</p>
+                <span>{description}</span>
             </div>
             <div className='description__buttons-block'>
                 {buttonsLabels.map(({id, label}) => (

@@ -1,12 +1,10 @@
+@import "../../styles";
+
 .header {
     display: flex;
-    justify-content: space-between;
-    padding: 30px;
-
-    &__logo {
-        display: flex;
-        justify-content: flex-start;
-    }
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: $headerColor;
 
     &__nav-bar {
         display: flex;

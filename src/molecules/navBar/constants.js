@@ -7,21 +7,26 @@ export const NAV_BAR_DATA = [
     {
         id: 1,
         text: "ABOUT US",
-        url: "/not-found",
+        url: "#aboutUs",
     },
     {
         id: 2,
         text: "FRAMEWORKS",
-        url: "/not-found",
+        url: "#frameworks",
     },
     {
         id: 3,
-        text: "APPLICATIONS",
-        url: "/not-found",
+        text: "FEEDBACK",
+        url: "#feedback",
     },
     {
         id: 4,
+        text: "APPLICATION",
+        url: "#applications",
+    },
+    {
+        id: 5,
         text: "CONTACT US",
-        url: "/not-found",
+        url: "#contactUs",
     }
 ]

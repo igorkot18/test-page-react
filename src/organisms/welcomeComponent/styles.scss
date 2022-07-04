@@ -13,8 +13,12 @@
         align-items: center;
     }
 
-    h1, h2 {
+    h1 {
         color: $textColor;
+        font-family: "Gothic", sans-serif;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 87.5px;
 
         &::after {
             content: ' ';
@@ -28,5 +32,15 @@
         &:hover::after {
             width: 100%;
         }
+    }
+
+    span {
+        display: flex;
+        justify-content: center;
+        color: $textColor;
+        font-family: "Gothic", sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 45px;
     }
 }
