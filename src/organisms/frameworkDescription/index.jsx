@@ -35,7 +35,7 @@ const FrameworkDescription = () => {
             </div>
           </div> :
           <div className='framework__item row' key={id}>
-            <div className='col-xxl-6 col-sm-12 p-0'>
+            <div className='col-xxl-6 col-sm-12 order-sm-0 order-1 p-0'>
               <DescriptionComponent
                 title={title}
                 description={description}

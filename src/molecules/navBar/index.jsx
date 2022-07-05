@@ -9,10 +9,10 @@ import "./styles.scss"
 
 const NavBar = () => {
     const [state, setState] = useState(false);
-    
+
     return (
         <div>
-           <nav className='nav'>
+           <nav className='nav' onClick={() => setState(false)}>
                 <ul className={state ? "nav__list-mobile" : "nav__list"}>
                     {NAV_BAR_DATA.map(({url, text, id}) => (
                         <li key={id} className="nav__link">
