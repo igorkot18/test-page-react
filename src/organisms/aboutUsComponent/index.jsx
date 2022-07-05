@@ -12,14 +12,14 @@ const AboutUsComponent = () => {
     <section id='aboutUs' className='contuct-us-component'>
       <div className='contuct-us-component__content container'>
         <div className='row'>
-          <div className='col-xxl-6'>
+          <div className='col-xxl-6 col-md-6 col-sm-12'>
             <DescriptionComponent
             title={TITLE}
             description={DESCRIPTION}
             buttonsLabels={BUTTONS_LABELS}
           />
           </div>
-          <div className='col-xxl-6'>
+          <div className='col-xxl-6 col-md-6 col-sm-12'>
             <VideoComponent url={VIDEO_URL}/>
           </div>
         </div>

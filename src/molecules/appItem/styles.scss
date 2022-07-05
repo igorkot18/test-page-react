@@ -2,12 +2,20 @@
 
 .application {
     &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         &-label {
-            max-width: 227px;
+            width: 70%;
             background-color: $backgroundAppLabelColor;
             color: $textColor;
             display: flex;
             justify-content: center;
+        }
+
+        &-image {
+            width: 70%;
         }
     }
 }

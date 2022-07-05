@@ -44,3 +44,19 @@
         line-height: 45px;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .welcome {
+        padding: 100px 0;
+
+        &__content {
+            h1 {
+                font-size: 30px;
+            }
+        }
+
+        span {
+            font-size: 20px;
+        }
+    }
+}

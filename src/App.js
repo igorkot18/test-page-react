@@ -3,7 +3,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Layout from './pages/layout';
-import NotFoundComponent from './templates/notFoundPage';
+import NotFoundComponent from './pages/notFoundPage';
 import Main from './templates/main'
 
 import { Route, Routes } from 'react-router-dom';

@@ -9,9 +9,9 @@ const ApplicationsItem = () => {
     <div className='application container'>
       <div className='row g-4'>
         {APPLICATIONS_ITEM_DATA.map(({id, image, label}) => (
-            <div className='col-xxl-3 p-0 col-sm-6' key={id}>
+            <div className='col-xxl-3 p-0 col-lg-6' key={id}>
               <div className='application__item'>
-                  <img src={image} alt='logo'></img>
+                  <img className='application__item-image' src={image} alt='logo'></img>
                   <div className='application__item-label'>{label}</div> 
               </div>
             </div>

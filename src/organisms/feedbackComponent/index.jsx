@@ -15,14 +15,14 @@ const FeedbackComponent = () => {
             <div className="container">
                 <div className="row">
                     {FEEDBACK_DATA.map(({logo, title, description, buttonsLabels, id}) => (
-                        <div className="feedback__content col-xxl-6" key={id}>
-                            <ImageComponent source={logo}/>
-                            <DescriptionComponent 
-                                title={title}
-                                description={description}
-                                buttonsLabels={buttonsLabels}
-                            />
-                        </div>
+                            <div className="col-xxl-6 feedback__content" key={id}>
+                                <ImageComponent source={logo}/>
+                                <DescriptionComponent 
+                                    title={title}
+                                    description={description}
+                                    buttonsLabels={buttonsLabels}
+                                />
+                            </div>
                     ))}
                 </div>
             </div>  

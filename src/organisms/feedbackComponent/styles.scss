@@ -1,9 +1,23 @@
 @import "../../styles";
 
-.feedback {
+#feedback {
     background-color: $backgroundFeedbackColor;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
 
     &__content {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .feedback {
+        &__content {
             display: flex;
+            flex-direction: column;
         }
+    }
 }

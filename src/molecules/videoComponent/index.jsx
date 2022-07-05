@@ -1,16 +1,19 @@
 import React from 'react';
 import ReactPLayer from "react-player"
 
+import './styles.scss';
+
 const VideoComponent = (props) => {
     const {
         url,
     } = props
 
     return (
-        <div>
+        <div className='player-wrapper'>
             <ReactPLayer
-                width="500px"
-                height="300px"
+                width="100%"
+                height="120%"
+                className="react-player"
                 controls
                 url={url}
             />

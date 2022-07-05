@@ -23,10 +23,10 @@ const FrameworkDescription = () => {
         }) => (
         isLeftLocation ? 
           <div className='framework__item row' key={id}>
-            <div className='col-xxl-6 p-0'>
+            <div className='col-xxl-6 col-sm-12 p-0'>
               <ImageComponent source={logo} />
             </div>
-            <div className='col-xxl-6 p-0'>
+            <div className='col-xxl-6 col-sm-12 p-0'>
               <DescriptionComponent
                 title={title}
                 description={description}
@@ -35,14 +35,14 @@ const FrameworkDescription = () => {
             </div>
           </div> :
           <div className='framework__item row' key={id}>
-            <div className='col-xxl-6 p-0'>
+            <div className='col-xxl-6 col-sm-12 p-0'>
               <DescriptionComponent
                 title={title}
                 description={description}
                 buttonsLabels={buttonsLabels}
               />
             </div>
-            <div className='col-xxl-6 p-0'>
+            <div className='col-xxl-6 col-sm-12 p-0'>
               <ImageComponent source={logo} />
             </div>
           </div>
